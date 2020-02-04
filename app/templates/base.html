@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Tax Payments</title>
+        {% else %}
+        <title>Welcome to Tax Payments</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>Tax Payments: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
